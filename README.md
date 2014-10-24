@@ -1,8 +1,12 @@
 oc_pagcoin
 ==========
 
-Faça uma doação e nos incentivo a continuar melhorando esse módulo.
-1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp
+Faça uma doação e nos incentive a continuar melhorando esse módulo.
+1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp Bitcoin
+
+LXjsKahtNEmtZCQPXyRnw7c7mU4iKJbYWJ Litcoin
+
+DFLaTxkhVeA84juzLBmxL8uRA1A7KJGnbL DogeCoin
 
 
 O módulo de pagamento PagCoin é uma solução desenvolvida por http://comerciobr.com para a plataforma de ecommerce opencart, o módulo utiliza como processador A https://pagcoin.com uma empresa brasileira que realiza o recebimento dos valores em bitcoin e deposita em sua conta diretamente em reais.
@@ -41,7 +45,7 @@ Para demonstração do módulo acesse: http://comerciobr.com/demo/opencart/oc156
 usuário: demo
 senha: demo
 
-Para usar o módulo é necessário que você se cadastre em https:pagcoin.com, lá você poderá pegar seu token que deverá ser cadastrado no módulo.
+Para usar o módulo é necessário que você se cadastre em https://pagcoin.com, lá você poderá pegar seu token que deverá ser cadastrado no módulo.
 
 
 Para qualquer dúvida, personalização, integração, suporte ou consultoria segue informação de contato:
@@ -55,3 +59,12 @@ facebook: http://fb.com/crisnao2
 skype: crisnao2
 
 +55 21 97498-1126 (claro) e WhatApp
+
+
+Faça uma doação e nos incentive a continuar melhorando esse módulo.
+
+1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp Bitcoin
+
+LXjsKahtNEmtZCQPXyRnw7c7mU4iKJbYWJ Litcoin
+
+DFLaTxkhVeA84juzLBmxL8uRA1A7KJGnbL DogeCoin
