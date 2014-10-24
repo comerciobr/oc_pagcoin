@@ -3,9 +3,9 @@ oc_pagcoin
 
 Faça uma doação e nos incentive a continuar melhorando esse módulo.
 1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp Bitcoin
-
+<br>
 LXjsKahtNEmtZCQPXyRnw7c7mU4iKJbYWJ Litcoin
-
+<br>
 DFLaTxkhVeA84juzLBmxL8uRA1A7KJGnbL DogeCoin
 
 
@@ -30,13 +30,15 @@ Portal: http://www.bitcoinnews.com.br, um portal brasileiro que aborda diversos 
 pesquisando pela rede irá encontrar vasta informação sobre a criptomoeda, mas nesses caminhos já dar para você ter uma noção de como a mesma funciona.
 
 Recursos do módulo:
-    opção nativa de desconto
-    opção para o cliente pagar via lightbox ou ser direcionado ao site da pagcoin
-    notificação de mudanças de status
-    permitir trabalhar em cima de todos os status que a pagcoin retornar
-    pode ser habilitado a partir de determinado valor da compra do cliente
-    permite você colocar sigla de cada loja junto ao código do pedido, assim quando a Pagcoin permitr configurar callbacks personalizados você poderá usar a mesma conta em diversas lojas.
-    e claro, permite receber pagamento. rsrs
+<ol>
+    <li>opção nativa de desconto</li>
+    <li>opção para o cliente pagar via lightbox ou ser direcionado ao site da pagcoin</li>
+    <li>notificação de mudanças de status</li>
+    <li>permitir trabalhar em cima de todos os status que a pagcoin retornar</li>
+    <li>pode ser habilitado a partir de determinado valor da compra do cliente</li>
+    <li>permite você colocar sigla de cada loja junto ao código do pedido, assim quando a Pagcoin permitr configurar callbacks personalizados você poderá usar a mesma conta em diversas lojas.</li>
+    <li>e claro, permite receber pagamento. rsrs</li>
+</ol>
 
 
 Testado no opencart a partir da versão  1.5.5.x
@@ -51,20 +53,20 @@ Para usar o módulo é necessário que você se cadastre em https://pagcoin.com,
 Para qualquer dúvida, personalização, integração, suporte ou consultoria segue informação de contato:
 
 Cristiano Soares
-
+<br>
 http://comerciobr.com
-
+<br>
 facebook: http://fb.com/crisnao2
-
+<br>
 skype: crisnao2
-
+<br>
 +55 21 97498-1126 (claro) e WhatApp
 
 
 Faça uma doação e nos incentive a continuar melhorando esse módulo.
 
 1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp Bitcoin
-
+<br>
 LXjsKahtNEmtZCQPXyRnw7c7mU4iKJbYWJ Litcoin
-
+<br>
 DFLaTxkhVeA84juzLBmxL8uRA1A7KJGnbL DogeCoin
