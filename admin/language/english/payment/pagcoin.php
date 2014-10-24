@@ -1,4 +1,15 @@
 <?php
+/*
+* @package		Comércio BR
+* @copyright	2014
+* @site			http://comerciobr.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html
+*
+* @Donate		1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp Bitcoin
+* @Donate		LXjsKahtNEmtZCQPXyRnw7c7mU4iKJbYWJ Litcoin
+* @Donate		DFLaTxkhVeA84juzLBmxL8uRA1A7KJGnbL DogeCoin
+*/
+
 // Heading
 $_['heading_title']					= '<a href="http://comerciobr.com" target="_blank"><img src="view/image/comerciobr_pagcoin.png" alt="Comércio BR - PagCoin" title="Comércio BR - PagCoin" /></a>';
 $_['heading_title_text']			= 'Comércio BR - PagCoin';

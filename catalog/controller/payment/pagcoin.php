@@ -1,14 +1,14 @@
 <?php
-
-   function apache_request_headers2() {
-        $headers = array();
-        foreach($_SERVER as $key => $value) {
-            if(substr($key, 0, 5) == 'HTTP_') {
-                $headers[str_replace(' ', '-', ucwords(str_replace('_', ' ', strtolower(substr($key, 5)))))] = $value;
-            }
-        }
-        return $headers;
-    }
+/*
+* @package		Comércio BR
+* @copyright	2014
+* @site			http://comerciobr.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html
+*
+* @Donate		1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp Bitcoin
+* @Donate		LXjsKahtNEmtZCQPXyRnw7c7mU4iKJbYWJ Litcoin
+* @Donate		DFLaTxkhVeA84juzLBmxL8uRA1A7KJGnbL DogeCoin
+*/
 
 if( !function_exists('apache_request_headers') ) {
     function apache_request_headers() {
@@ -19,8 +19,6 @@ if( !function_exists('apache_request_headers') ) {
             if( preg_match($rx_http, $key) ) {
                 $arh_key = preg_replace($rx_http, '', $key);
                 $rx_matches = array();
-           // do some nasty string manipulations to restore the original letter case
-           // this should work in most cases
                 $rx_matches = explode('_', $arh_key);
 
                 if( count($rx_matches) > 0 and strlen($arh_key) > 2 ) {
@@ -123,31 +121,12 @@ class ControllerPaymentPagcoin extends Controller {
     	unset($this->session->data['coupon']);
     	unset($this->session->data['voucher']);
     	unset($this->session->data['vouchers']);
-    	/*
-		*/    	
 	}
 			
 	public function callback()
 	{
 		$headers = apache_request_headers();
-		$headers2 = apache_request_headers2();
-		
-		//*
-		$f = fopen(DIR_LOGS."pagcoin.txt", "a+");
-		//ob_start();
-		$text = "";
-		foreach($headers as $key => $header)
-		{
-			$text .="{$key} = {$header}\r\n";
-		}
-		//$text = ob_get_clean();
-		//@ob_end_clean();
-		//$text = implode("\r\n", $headers);
-		fwrite($f, $text);
-		//fclose($f);
-		//*/
-		
-		//if(!isset($headers["EnderecoPagCoin"]) || !isset($headers["AssinaturaPagCoin"]))
+	
 		if(!isset($headers["ENDERECOPAGCOIN"]) || !isset($headers["ASSINATURAPAGCOIN"]))
 		{
 			die("Cabeçalhos não encontrados.");
@@ -161,15 +140,12 @@ class ControllerPaymentPagcoin extends Controller {
 		fclose($f);
 		
 		// função para calculo do hmac   concatenação de cabeçalho + conteudo   sua ApiKey       
-		//$signature = hash_hmac('sha256', $headers["EnderecoPagCoin"].$postdata, $this->config->get("pagcoin_apikey"));
 		$signature = hash_hmac('sha256', $headers["ENDERECOPAGCOIN"].$postdata, $this->config->get("pagcoin_apikey"));
 
-		//if($signature != $headers["AssinaturaPagCoin"]){
 		if($signature != $headers["ASSINATURAPAGCOIN"]){
 			die("Assinatura não confere");
 		}
 		
-		// Sua implementação própria para identificar o pagamento e liberar os produtos. 
 		// Para acessar os campos do objeto informado, use a seguinte sintaxe como exemplo:
 		$idPagCoin = $fields["idPagCoin"];
 		$valorEmMoedaOriginal = $fields["valorEmMoedaOriginal"];

@@ -1,4 +1,15 @@
 <?php 
+/*
+* @package		Comércio BR
+* @copyright	2014
+* @site			http://comerciobr.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html
+*
+* @Donate		1G3xTNh512PRDbfoEoeWWacigVVR9tYHAp Bitcoin
+* @Donate		LXjsKahtNEmtZCQPXyRnw7c7mU4iKJbYWJ Litcoin
+* @Donate		DFLaTxkhVeA84juzLBmxL8uRA1A7KJGnbL DogeCoin
+*/
+
 class ModelPaymentPagcoin extends Model {
   	public function getMethod($address, $total)
 	{
